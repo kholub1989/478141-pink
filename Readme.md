@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Krisztian Holub](https://up.htmlacademy.ru/adaptive/13/user/478141).
-* Наставник: `Неизвестно`.
+* Наставник: [Наталья Катаева](https://htmlacademy.ru/profile/id465221).
 
 ---
 
