@@ -1,12 +1,33 @@
 .price-table {
-  &__cost,
+  &__flag {
+    color: @text--white;
+    font-size: @font-size--reg;
+    font-weight: @font-weight--regular;
+    line-height: @line-height--large;
+    background-color: @pink;
+  }
+
+  &__cost {
+    color: @text--white;
+    font-size: @font-size--big;
+    font-weight: @font-weight--big;
+    line-height: @line-height--large;
+    background-color: @bg--dark;
+  }
+
   &__title {
     color: @text--white;
+    font-size: @font-size--h2;
+    font-weight: @font-weight--light;
+    line-height: @line-height--large;
     background-color: @bg--dark;
   }
 
   &__service {
     color: @grey--dark;
+    font-size: @font-size--reg;
+    font-weight: @font-weight--regular;
+    line-height: @line-height--large;
     background-color: @bg--white;
   }
 }
