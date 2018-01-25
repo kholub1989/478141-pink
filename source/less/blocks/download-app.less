@@ -1,12 +1,21 @@
 .download-app {
   background-color: @bg--dark;
 
+  &__wrapper {
+    padding-top: 28px;
+    padding-bottom: 21px;
+  }
+
   &__btn {
     color: @text--white;
     font-size: @font-size--big;
     font-weight: @font-weight--big;
     line-height: @font-size--big;
     text-decoration: none;
+    padding: 14px 37px 12px 36px;
+    margin-left: -10px;
+    border-radius: 50px;
+    border: 2px solid @text--white;
   }
 
   &__description {
@@ -14,5 +23,11 @@
     font-size: @font-size--reg;
     font-weight: @font-weight--light;
     line-height: @line-height--medium;
+  }
+
+  &__platforms {
+    height: 50px;
+    margin: 31px auto 24px;
+    padding: auto;
   }
 }
