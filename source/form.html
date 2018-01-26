@@ -4,28 +4,29 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
-    <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Логотип PINK">
+    <!--<<img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Логотип PINK">-->
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item stile-list__item--active">
-            <a href="index.html">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
+            <a class="site-list__link" href="photo.html">Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a>Конкурс</a>
+            <a class="site-list__link">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="#">HTML Academy</a>
+            <a class="site-list__link" href="#">HTML Academy</a>
           </li>
         </ul>
       </div>
@@ -34,7 +35,7 @@
 
   <main class="page-main">
     <section class="page-title">
-      <img class="page-title__image" src="http://placehold.it/150x100" alt="PINK">
+      <!--<<img class="page-title__image" src="http://placehold.it/150x100" alt="PINK">-->
       <div class="page-title__container">
         <h1 class="page-title__heading">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
@@ -135,7 +136,7 @@
       <section class="form__section form__section--white">
         <h2 class="visually-hidden">Ваш отзыв</h2>
         <div class="form__wrapper">
-          <fieldset class="form__fieldset">
+          <fieldset>
             <legend class="form__title">Опишите свои эмоции</legend>
             <textarea class="form__input form__input--reference" name="reference" rows="8" cols="80" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
@@ -172,11 +173,11 @@
   </footer>
 
   <div class="popup popup--success">
-    <div class="popup__wrapper">
+    <div class="popup__wrapper-top">
       <h2 class="popup__title">Ваша заявка отправлена</h2>
       <p class="popup__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим её и оповестим вас.</p>
     </div>
-    <div class="popup__wrapper">
+    <div class="popup__wrapper-bott">
       <a class="popup__btn popup__btn--close" href="index.html">Закрыть окно</a>
     </div>
   </div>
