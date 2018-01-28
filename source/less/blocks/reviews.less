@@ -1,4 +1,7 @@
 .reviews {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
   background-color: @bg--white;
 }
 
@@ -10,9 +13,38 @@
   font-style: normal;
 }
 
+.reviews__author-info {
+  display: none;
+  color: @grey--dark;
+  font-size: @font-size--reg;
+  font-weight: @font-weight--regular;
+  line-height: @line-height--large;
+}
+
 .reviews__text {
   color: @grey--dark;
   font-size: @font-size--reg;
   font-weight: @font-weight--regular;
   line-height: @line-height--large;
+}
+
+.reviews__item {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__author-container {
+    order: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews__author-container {
+    order: 1;
+  }
+
+  .reviews__author-info {
+    display: block;
+  }
 }

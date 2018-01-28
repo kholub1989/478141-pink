@@ -1,3 +1,30 @@
+
+.contacts__items {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__items {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__items {
+    flex-direction: row;
+  }
+
+  .contacts-item--mail {
+    order: 2;
+  }
+}
+
+.contacts-item {
+  margin: auto;
+}
+
 .contacts__heading {
   color: @grey--dark;
   font-size: @font-size--h2;

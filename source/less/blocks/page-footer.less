@@ -1,3 +1,28 @@
 .page-footer {
+  height: 410px;
   background-color: @bg--white;
+}
+
+.page-footer__wrapper {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__wrapper {
+    height: 125px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__wrapper {
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
 }

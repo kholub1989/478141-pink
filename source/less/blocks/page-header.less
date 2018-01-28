@@ -1,3 +1,24 @@
 .page-header {
+  height: 462px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
   color: @text--white;
+  background-color: @bg--dark;
+  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+  background-position: bottom, center top;
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, cover;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    height: 729px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    height: 853px;
+  }
 }
