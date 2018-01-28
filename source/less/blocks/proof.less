@@ -1,0 +1,75 @@
+.proof {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .proof {
+    height: 400px;
+    display: flex;
+  }
+
+  .proof__wrapper {
+    display: flex;
+    margin-top: 50px;
+  }
+
+  .proof__timer {
+    width: 300px;
+    height: 280px;
+  }
+
+  .proof__content {
+    width: 320px;
+    height: 220px;
+  }
+
+  .proof__title {
+    color: @black;
+    font-size: @font-size--h1;
+    font-weight: @font-weight--big;
+    line-height: @line-height--xxl;
+  }
+
+  .proof__text {
+    color: @grey--dark;
+    font-size: @font-size--reg;
+    font-weight: @font-weight--regular;
+    line-height: @line-height--medium;
+  }
+
+  .proof-link {
+    color: @pink;
+    font-size: @font-size--reg;
+    font-weight: @font-weight--regular;
+    line-height: @line-height--medium;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .proof {
+    height: 400px;
+    display: flex;
+  }
+
+  .proof__wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+  }
+
+  .proof__timer {
+    width: 300px;
+    height: 280px;
+  }
+
+  .proof__content {
+    width: 320px;
+    height: 220px;
+  }
+
+  .proof-link,
+  .proof__text {
+    font-size: @font-size--big;
+    line-height: @line-height--large;
+  }
+}
