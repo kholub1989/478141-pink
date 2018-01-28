@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
 </head>
 
 <body>
@@ -14,8 +16,8 @@
       <!--<img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Логотип PINK">-->
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item stile-list__item--active">
             <a class="site-list__link">Главная</a>
@@ -77,7 +79,19 @@
           </div>
         </div>
       </div>
-      <img class="features__image" src="http://placehold.it/150x100" alt="PINK">
+      <!--<img class="features__image" src="http://placehold.it/150x100" alt="PINK">-->
+    </section>
+
+    <section class="proof">
+      <div class="proof__wrapper">
+        <div class="proof__timer">
+        </div>
+        <div class="proof__content">
+          <h2 class="proof__title">Эффект на 24 часа!</h2>
+          <p class="proof__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <a class="proof-link" href="#">Узнать больше об исследовании</a>
+        </div>
+      </div>
     </section>
 
     <section class="reviews">
@@ -85,7 +99,8 @@
         <h2 class="visually-hidden">Отзывы о нас</h2>
         <div class="reviews__list  slider__list">
           <blockquote class="reviews__item  slider__item">
-            <cite class="reviews__author-name">Николай Петров</cite>
+            <cite class="reviews__author-name reviews__author-container">Николай Петров</cite>
+            <p class="reviews__author-info reviews__author-container">25 лет, водитель трамвая</p>
             <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился сосвоей будущей женой в комментариях к выложенной фотографии!</p>
           </blockquote>
           <blockquote class="reviews__item  slider__item">
@@ -110,6 +125,7 @@
         <h2 class="visually-hidden">Цени на услуги PINK</h2>
         <table class="price-table">
           <tr>
+            <td class="price-table__header price-table__header--empty"></td>
             <td class="price-table__header">
               <div class="price-table__flag">Хит</div>
               <p class="price-table__title">Анлим</p>
@@ -127,16 +143,19 @@
             </td>
           </tr>
           <tr>
+            <td class="price-table__service price-table__service--tablet">Розовый фильтр</td>
             <td class="price-table__service price-table__service--?"><span class="price-table__service-mobile">Розовый фильтр</span></td>
             <td class="price-table__service price-table__service--?"><span class="price-table__service-mobile">Розовый фильтр</span></td>
             <td class="price-table__service price-table__service--?"><span class="price-table__service-mobile">Розовый фильтр</span></td>
           </tr>
           <tr>
+            <td class="price-table__service price-table__service--tablet">Смайлики</td>
             <td class="price-table__service price-table__service--yes"><span class="price-table__service-mobile">Смайлики</span></td>
             <td class="price-table__service price-table__service--yes"><span class="price-table__service-mobile">Смайлики</span></td>
             <td class="price-table__service price-table__service--no"><span class="price-table__service-mobile">Смайлики</span></td>
           </tr>
           <tr>
+            <td class="price-table__service price-table__service--tablet">Комментарии</td>
             <td class="price-table__service price-table__service--?"><span class="price-table__service-mobile">Комментарии</span></td>
             <td class="price-table__service price-table__service--?"><span class="price-table__service-mobile">Комментарии</span></td>
             <td class="price-table__service price-table__service--?"><span class="price-table__service-mobile">Комментарии</span></td>
@@ -149,12 +168,10 @@
         </p>
       </div>
     </section>
-  </main>
 
-  <footer class="page-footer">
-    <h2 class="visually-hidden">Связаться с нами:</h2>
-    <div class="page-footer__wrapper">
-      <section class="contacts">
+    <section class="contacts">
+      <div class="ontacts__wrapper">
+        <h2 class="visually-hidden">Связаться с нами:</h2>
         <div class="contacts__container">
           <h2 class="contacts__heading">Остались вопросы? Свяжитесь с нами!</h2>
           <div class="contacts__items">
@@ -162,7 +179,7 @@
               <h3 class="contacts-item__title">Звоните:</h3>
               <p class="contacts-item__contact">+7 (812) 555-66-66</p>
             </div>
-            <div class="contacts-item">
+            <div class="contacts-item contacts-item--mail">
               <h3 class="contacts-item__title">Пишите:</h3>
               <p class="contacts-item__contact">mail@htmlacademy.ru</p>
             </div>
@@ -172,11 +189,32 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="map" id="map-canvas"></div>
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo" href="index.html">
+        <img class="page-footer__logo-image" src="http://placehold.it/150x100" alt="Логотип PINK">
+      </a>
+
+      <section class="social-links">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <a class="social-links__btn social-links__btn--twitter" href="#">Twitter</a>
+        <a class="social-links__btn social-links__btn--facebook" href="#">Facebook</a>
+        <a class="social-links__btn social-links__btn--youtube" href="#">Youtube</a>
       </section>
-      <div class="map" id="map-canvas"></div>
+
+      <section class="copyright">
+        <h2 class="visually-hidden">Разработано компанией htmlacademy</h2>
+        <p class="copyright__text">Разработано
+          <a class="copyright__link" href="https://htmlacademy.ru/"></a>
+        </p>
+      </section>
     </div>
   </footer>
-
 </body>
 
 </html>
