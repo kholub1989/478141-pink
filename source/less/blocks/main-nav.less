@@ -1,26 +1,21 @@
 .main-nav {
-  width: 100%;
-  height: 66px;
   margin: 0 auto;
-  background-color: @grey--dark;
+  border: 1px solid yellow;
 }
 
 @media (min-width: @tablet-width) {
   .main-nav {
-    height: 110px;
+    // height: 110px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-nav {
     height: 110px;
+    margin: 0;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-  }
-
-  .main-nav__toggle {
-    display: none;
   }
 }
 
