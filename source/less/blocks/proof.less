@@ -4,72 +4,64 @@
 
 @media (min-width: @tablet-width) {
   .proof {
-    height: 400px;
-    display: flex;
-  }
-
-  .proof__wrapper {
-    display: flex;
-    margin-top: 50px;
-  }
-
-  .proof__timer {
-    width: 300px;
-    height: 280px;
-  }
-
-  .proof__content {
-    width: 320px;
-    height: 220px;
-  }
-
-  .proof__title {
-    color: @black;
-    font-size: @font-size--h1;
-    font-weight: @font-weight--big;
-    line-height: @line-height--xxl;
-  }
-
-  .proof__text {
-    color: @grey--dark;
-    font-size: @font-size--reg;
-    font-weight: @font-weight--regular;
-    line-height: @line-height--medium;
-  }
-
-  .proof-link {
-    color: @pink;
-    font-size: @font-size--reg;
-    font-weight: @font-weight--regular;
-    line-height: @line-height--medium;
+    display: block;
+    min-height: 360px;
+    padding: 95px 40px 55px 50%;
+    background: url("../img/icon-editor-diagram-fill.svg") 10% 55px no-repeat;
+    background-size: 260px auto;
   }
 }
 
 @media (min-width: @desktop-width) {
   .proof {
-    height: 400px;
-    display: flex;
+    min-height: 470px;
+    padding: 0 10%;
+    background-color: @bg--grey;
+    background-position: 14% 45%;
+    background-size: 305px auto;
   }
+}
 
-  .proof__wrapper {
-    display: flex;
-    flex-direction: row;
-    margin-top: 50px;
+.proof__content {
+  @media (min-width: @desktop-width) {
+    padding: 150px 0 0 40%;
   }
+}
 
-  .proof__timer {
-    width: 300px;
-    height: 280px;
+.proof__title {
+  padding: 0 15px 10px 0;
+  font-size: @font-size--h1;
+  font-weight: @font-weight--big;
+  line-height: @line-height--xxl;
+}
+
+@media (min-width: @desktop-width) {
+  .proof__title {
+    padding-bottom: 20px;
   }
+}
 
-  .proof__content {
-    width: 320px;
-    height: 220px;
-  }
+.proof__text {
+  margin-bottom: 10px;
+  color: @grey--dark;
+  font-size: @font-size--reg;
+  font-weight: @font-weight--regular;
+  line-height: @line-height--medium;
+}
 
-  .proof-link,
+@media (min-width: @desktop-width) {
   .proof__text {
+    margin-bottom: 30px;
     font-size: @font-size--big;
     line-height: @line-height--large;
   }
+}
+
+.proof__link {
+  display: block;
+  padding-bottom: 30px;
+  font-size: @font-size--reg;
+  font-weight: @font-weight--regular;
+  line-height: @line-height--medium;
+  color: @pink;
 }
