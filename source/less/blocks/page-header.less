@@ -10,37 +10,38 @@
 }
 
 .page-header__wrapper {
-  padding: 0 20px;
+  // padding: 0 20px;
   background-color: @grey--dark;
   border: 1px solid red;
 }
 
-.page-header_menu {
+.page-header__menu {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   border: 1px solid green;
 }
 
-@media (min-width: @tablet-width) {
-  .page-header {
-    padding: 0 20px;
-  }
-}
+// @media (min-width: @tablet-width) {
+//   .page-header {
+//     padding: 0 20px;
+//   }
+// }
 
 @media (min-width: @desktop-width) {
   .page-header {
-    padding: 0 120px;
+    padding: 0 130px;
   }
 
   .page-header__wrapper {
     width: 940px;
     margin: 0 auto;
+    padding: 0 10px;
   }
 
   .page-header__container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .page-header__toggle {
