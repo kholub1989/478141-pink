@@ -2,7 +2,18 @@
   background-color: @bg--grey;
 }
 
-.filter-range__btn {
+.filter-range__controls {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  // font-size: 0;
+}
+
+.filter-range__btn--post,
+.filter-range__btn--cancel {
+  width: 280px;
   color: @pink;
   font-size: @font-size--big;
   font-weight: @font-weight--big;
