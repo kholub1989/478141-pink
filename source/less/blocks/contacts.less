@@ -1,43 +1,42 @@
-.contacts {
-  padding-top: 40px;
-  text-align: center;
-  border: 1px solid red;
-}
-
-@media (min-width: @tablet-width) {
-  .contacts {
-    padding-top: 45px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .contacts {
-    padding-top: 65px;
-  }
-}
-
-.contacts__items {
-  @media (min-width: @tablet-width) {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-}
-
 .contacts__heading {
-  margin-bottom: 25px;
-  padding: 0 20px;
   font-size: @font-size--h2;
   font-weight: @font-weight--light;
   line-height: @line-height--large;
   color: @grey--dark;
 }
 
+.contacts__item {
+  border: 1px dashed orange;
+}
+
+.contacts__item-title {
+  font-size: @font-size--big;
+  font-weight: @font-weight--big;
+  line-height: @line-height--large;
+  color: @grey--dark;
+}
+
+.contacts__item-contact {
+  font-size: @font-size--h2;
+  line-height: @line-height--large;
+  font-weight: @font-weight--light;
+  color: @pink;
+  text-decoration: none;
+}
+
 @media (min-width: @tablet-width) {
+  .contacts__items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
   .contacts__heading {
-    margin-bottom: 35px;
     font-size: @line-height--xxxl;
-    line-height: 50px;
+  }
+
+  .contacts__item {
+    flex-basis: 300px;
   }
 }
 
@@ -45,28 +44,9 @@
   .contacts__heading {
     margin-bottom: 50px;
     font-size: 50px;
-    line-height: 60px;
+    // line-height: 60px;
   }
-}
 
-.contacts__item {
-  position: relative;
-  z-index: 2;
-  margin-bottom: 20px;
-  padding: 0 20px;
-  border: 1px dashed orange;
-}
-
-@media (min-width: @tablet-width) {
-  .contacts__item {
-    min-width: 275px;
-    padding: 0;
-    margin: 0 25px 25px;
-    // line-height: 50px;
-  }
-}
-
-@media (min-width: @desktop-width) {
   .contacts__item {
     margin-bottom: 15px;
   }
@@ -78,25 +58,4 @@
   .contacts__item--address {
     order: 2;
   }
-}
-
-.contacts__item-title {
-  font-size: @font-size--big;
-  font-weight: @font-weight--big;
-  line-height: @line-height--large;
-  color: @grey--dark;
-}
-
-@media (min-width: @desktop-width) {
-  .contacts__item-title {
-    margin-bottom: 10px;
-  }
-}
-
-.contacts__item-contact {
-  font-size: @font-size--h2;
-  line-height: @line-height--large;
-  font-weight: @font-weight--light;
-  color: @pink;
-  text-decoration: none;
 }
