@@ -4,7 +4,7 @@
   background-color: @bg--dark;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: center;
-  background-repeat: no-repeat, no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -14,11 +14,6 @@
   font-size: @font-size--h2;
   font-weight: @font-weight--light;
   line-height: @line-height--medium;
-
-  @media (min-width: @tablet-width) {
-    font-size: 50px;
-    line-height: 50px;
-  }
 }
 
 .posts__slogan {
@@ -31,8 +26,17 @@
   font-size: @font-size--reg;
   font-weight: @font-weight--regular;
   line-height: @line-height--large;
+}
 
-  @media (min-width: @tablet-width) {
+@media (min-width: @tablet-width) {
+  .posts__title-heading {
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .posts__slogan-heading {
     font-size: @font-size--big;
   }
 }

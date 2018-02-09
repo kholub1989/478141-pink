@@ -3,5 +3,43 @@
 }
 
 .filter__image {
-  padding-top: 18px;
+  padding-top: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .filter__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .filter__container {
+    flex-direction: column;
+    flex-basis: 300px;
+  }
+
+  .filter__image {
+    padding-top: 58px;
+    padding-bottom: 54px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .filter__wrapper {
+    background-color: @bg--grey;
+  }
+
+  .filter {
+    background-color: @bg--white;
+  }
+
+  .filter__image {
+    padding-top: 57px;
+    padding-bottom: 57px;
+    padding-left: 80px;
+  }
+
+  .filter__container {
+    padding-right: 60px;
+  }
 }
